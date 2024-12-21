@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book - Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Movie</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <form action="confirmation.html" method="post">
+            <label for="movie">Select Movie:</label>
+            <select id="movie" name="movie" required>
+                <option value="Avengers">SCAM 1992</option>
+                <option value="Inception">LUCKY BASKHAR</option>
+                <option value="DarkKnight">LION KING</option>
+            </select>
+            <br><br>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label for="time">Select Time:</label>
+            <select id="time" name="time" required>
+                <option value="10am">10:00 AM</option>
+                <option value="1pm">01:00 PM</option>
+                <option value="4pm">04:00 PM</option>
+                <option value="7pm">07:00 PM</option>
+            </select>
+            <br><br>
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" max="10" required>
+            <br><br>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </main>
+    <footer>
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+</html>
